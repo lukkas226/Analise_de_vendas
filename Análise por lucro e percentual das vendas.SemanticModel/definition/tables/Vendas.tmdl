@@ -1,0 +1,216 @@
+table Vendas
+	lineageTag: 184ed0b3-227b-4e07-92d2-eac119e7e0ee
+
+	measure 'Faturamento Total' = SUM(Vendas[Faturamento])
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 418628d8-26b4-4566-abad-a1d4cfe4e39c
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Lucro Total' = SUM(Vendas[Lucro])
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 369f4375-f461-4cd1-bd68-4afded234b4f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Margem de Lucro' = DIVIDE([Lucro Total], [Faturamento Total])
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7d021e3e-4de0-41fb-aa14-89855a0a4f2e
+
+	measure 'Ticket Médio' = AVERAGE(Vendas[Faturamento])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: cc976960-32b0-4a12-bb48-c6468d3e257f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Ranking Marca' = RANKX(ALL(Vendas[Marca]), [Lucro Total], ,DESC)
+		formatString: 0
+		lineageTag: 8da62169-bb34-4414-801d-7f234b6950d3
+
+	measure '% Faturamento Marca' = DIVIDE([Faturamento Total], CALCULATE([Faturamento Total], ALL(Vendas[Marca])))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 113f08c8-6c51-4428-8165-52e443c0fe01
+
+	measure 'Ranking Loja' = RANKX(ALL(Vendas[Loja]), [Lucro Total], ,DESC)
+		formatString: 0
+		lineageTag: 7f522f87-82ea-4489-a31e-179c78b6400b
+
+	measure 'Faturamento Mês' = CALCULATE([Faturamento Total], MONTH(Vendas[Dia]) = MONTH(TODAY()))
+		formatString: 0
+		lineageTag: 666c5d28-b9ca-43bc-8184-df6e0fdd1603
+
+	measure 'Crescimento %' = DIVIDE([Faturamento Total] - CALCULATE([Faturamento Total], DATEADD(dCalendario[Date].[Ano], -1, MONTH)), CALCULATE([Faturamento Total], DATEADD(dCalendario[Date], -1, MONTH)))
+		formatString: 0
+		lineageTag: d0154916-2282-40da-a991-fa4dd9c799e2
+
+	measure 'Produto Mais Lucrativo' = CALCULATE(SELECTEDVALUE(Vendas[SKU], TOPN(1, ALL(Vendas[SKU]), [Lucro Total],DESC)))
+		lineageTag: 52e6854f-6126-4187-8cb1-8b8d6fbaa20b
+
+	measure '% Faturamento Produto' = DIVIDE([Faturamento Total], CALCULATE([Faturamento Total], ALL(Vendas[Tipo])))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0173b87c-3672-46d5-bc9b-1f82e94dbfeb
+
+	measure 'Fat Top N Produtos' = ```
+			
+			IF([Ranking Produto]<=[Lucro Total],
+			CALCULATE(
+			    [Faturamento Total], 
+			    TOPN(
+			        [Lucro Total],
+			        VALUES(Vendas[Tipo]),
+			        [Faturamento Total]
+			    )
+			))
+			```
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: f806f1c9-46b5-468b-b2dc-1d5ca19c6e21
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Ranking Produto' = ```
+			
+			RANKX(
+			    ALL(Vendas[Tipo]), 
+			    [Faturamento Total] 
+			)
+			```
+		formatString: 0
+		lineageTag: 6e2efd89-911d-42b9-9498-d151384bc49d
+
+	measure 'Qtd Vendas' = COUNTROWS(Vendas)
+		formatString: 0
+		lineageTag: 23f696a3-041a-4682-904d-435c05916b69
+
+	column SKU
+		dataType: string
+		lineageTag: 987708fa-89c5-499f-aa15-4f58d784d50d
+		summarizeBy: none
+		sourceColumn: SKU
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: b276dc93-da58-4e62-9a84-bd66fb574bf8
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marca
+		dataType: string
+		lineageTag: a4492b39-46ad-4ee9-bd71-1c3d2c31dde4
+		summarizeBy: none
+		sourceColumn: Marca
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faturamento
+		dataType: int64
+		formatString: 0
+		lineageTag: e497f436-9c4b-4b54-a89d-fed3b9694f20
+		summarizeBy: sum
+		sourceColumn: Faturamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Lucro
+		dataType: int64
+		formatString: 0
+		lineageTag: d600e824-a3f0-45d6-aeed-3102e8e20219
+		summarizeBy: sum
+		sourceColumn: Lucro
+
+		annotation SummarizationSetBy = Automatic
+
+	column Loja
+		dataType: string
+		lineageTag: a93209d5-a173-4af3-b7d4-914fa7b807e8
+		summarizeBy: none
+		sourceColumn: Loja
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo Vendedor'
+		dataType: string
+		lineageTag: 365d2fc4-09e2-4105-b7e5-2c19bd065d0d
+		summarizeBy: none
+		sourceColumn: Tipo Vendedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Classificação Margem' = IF(Vendas[Lucro] / Vendas[Faturamento] > 0.5, "Alta Margem", "Baixa Margem")
+		lineageTag: 0aadf764-f8fa-4fea-9755-c290682e9bf7
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Venda Alta' = IF(Vendas[Faturamento] > 2200, "Alta", "Normal")
+		lineageTag: 27e9ae0f-8cf1-4fb3-bb4d-6a8b1267f805
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data_Venda =
+			
+			VAR MesNum = SWITCH(
+			    LOWER(Vendas[Mês]),
+			    "janeiro", 1, "fevereiro", 2, "março", 3, "abril", 4, "maio", 5, "junho", 6,
+			    "julho", 7, "agosto", 8, "setembro", 9, "outubro", 10, "novembro", 11, "dezembro", 12,
+			    1
+			)
+			RETURN DATE(Vendas[Ano], MesNum, Vendas[Dia])
+		formatString: General Date
+		lineageTag: a32ba575-8987-4bd2-abc0-37e55a6f19ed
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 6518f81a-9d98-4288-8c0d-805cfbaa4836
+			defaultHierarchy: LocalDateTable_d1455e3d-749a-4405-8e08-0fc495f695eb.'Hierarquia de datas'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f709ceb-d766-4eb8-9c3f-b25c8f40d8ff
+		summarizeBy: sum
+		sourceColumn: Ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mês
+		dataType: string
+		lineageTag: 54057846-5e50-4a9e-ada0-7aa98b6f9847
+		summarizeBy: none
+		sourceColumn: Mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia
+		dataType: int64
+		formatString: 0
+		lineageTag: e1678114-4bcd-49c2-891c-59031302046a
+		summarizeBy: sum
+		sourceColumn: Dia
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Vendas = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\lukka\OneDrive\Documentos\Power BI Teinamento\aula - Função DAX CALCULATE\httpswww.youtube.comwatchv=MZex-bADQIA\Vendas.csv"),[Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"SKU", type text}, {"Ano", Int64.Type}, {"Mês", type text}, {"Dia", Int64.Type}, {"Tipo", type text}, {"Marca", type text}, {"Faturamento", Int64.Type}, {"Lucro", Int64.Type}, {"Loja", type text}, {"Tipo Vendedor", type text}}),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Tipo Alterado","Hashtag","Pitbulls",Replacer.ReplaceText,{"Marca"})
+				in
+				    #"Valor Substituído"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

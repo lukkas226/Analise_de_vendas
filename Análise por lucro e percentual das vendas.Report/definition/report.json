@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY25SU12",
+      "reportVersionAtImport": {
+        "visual": "2.5.0",
+        "report": "3.1.0",
+        "page": "2.3.0"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY25SU12",
+          "path": "BaseThemes/CY25SU12.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "People_Analytics_1723582796560136096498833.png",
+          "path": "People_Analytics_1723582796560136096498833.png",
+          "type": "Image"
+        },
+        {
+          "name": "Captura_de_tela_2026-02-06_2015683922792528613.png",
+          "path": "Captura_de_tela_2026-02-06_2015683922792528613.png",
+          "type": "Image"
+        },
+        {
+          "name": "profit6657029093776807.png",
+          "path": "profit6657029093776807.png",
+          "type": "Image"
+        },
+        {
+          "name": "profit_(1)6519741877034002.png",
+          "path": "profit_(1)6519741877034002.png",
+          "type": "Image"
+        },
+        {
+          "name": "margin6231232497179274.png",
+          "path": "margin6231232497179274.png",
+          "type": "Image"
+        },
+        {
+          "name": "acquisition_(1)2825864799783172.png",
+          "path": "acquisition_(1)2825864799783172.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

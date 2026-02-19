@@ -1,0 +1,16 @@
+relationship 0829c94b-20a9-48d2-817b-5eebabd782bb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dCalendario.Date
+	toColumn: LocalDateTable_541e02b0-d91a-4d1b-9abe-88d588ed7ae6.Date
+
+relationship 6518f81a-9d98-4288-8c0d-805cfbaa4836
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Vendas.Data_Venda
+	toColumn: LocalDateTable_d1455e3d-749a-4405-8e08-0fc495f695eb.Date
+
+relationship b34e59c5-058f-9734-8fac-353bc9b365b4
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Vendas.Mês
+	toColumn: dCalendario.'Mês Nome'
+

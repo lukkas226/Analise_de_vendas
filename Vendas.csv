@@ -1,0 +1,150 @@
+﻿SKU,Ano,Mês,Dia,Tipo,Marca,Faturamento,Lucro,Loja,Tipo Vendedor
+SKU 122,2014,fevereiro,27,Camisa,Farme,206.1,141.6,São Paulo,Próprio
+SKU 129,2013,maio,5,Sapato,Adidas,84.5,26,Rio de Janeiro,Próprio
+SKU 131,2013,agosto,11,Camiseta,Nike,102.1,53.9,São Paulo,Próprio
+SKU 135,2014,abril,21,Sapato,Hashtag,111.1,64.6,Rio de Janeiro,Próprio
+SKU 137,2014,dezembro,26,Camiseta,Hashtag,155.8,98.8,Belo Horizonte,Próprio
+SKU 143,2014,novembro,24,Casaco,Adidas,182.3,77,Rio de Janeiro,Próprio
+SKU 144,2014,agosto,28,Camiseta,Adidas,110.1,66.5,São Paulo,Próprio
+SKU 145,2013,outubro,20,Meia,Osklen,77.9,45.7,São Paulo,Próprio
+SKU 147,2013,outubro,25,Casaco,Hashtag,215.6,164.6,Belo Horizonte,Próprio
+SKU 149,2013,maio,5,Camisa,Farme,227.1,132,São Paulo,Próprio
+SKU 152,2014,outubro,17,Casaco,Lacoste,211.8,111.9,Rio de Janeiro,Próprio
+SKU 162,2013,setembro,15,Sapato,Osklen,75.4,45.5,Rio de Janeiro,Próprio
+SKU 164,2014,janeiro,30,Meia,Lacoste,107.5,48.1,Rio de Janeiro,Próprio
+SKU 182,2014,dezembro,29,Casaco,Hashtag,205.3,78.9,Online,Próprio
+SKU 183,2014,maio,19,Camiseta,Hashtag,173,58.2,São Paulo,Próprio
+SKU 195,2014,agosto,6,Casaco,Reserva,237,77,São Paulo,Próprio
+SKU 212,2013,abril,7,Meia,Lacoste,95.2,59.4,Curitiba,Próprio
+SKU 218,2014,novembro,5,Sapato,Farme,73.6,66.7,Belo Horizonte,Próprio
+SKU 226,2013,outubro,25,Camisa,Farme,179,121.6,Online,Próprio
+SKU 228,2013,fevereiro,27,Meia,Osklen,67.9,42.4,Rio de Janeiro,Próprio
+SKU 233,2014,setembro,1,Boné,Adidas,119.3,90,Belo Horizonte,Próprio
+SKU 233,2014,dezembro,20,Camiseta,Lacoste,208.4,59.3,Online,Próprio
+SKU 235,2014,junho,22,Sapato,Lacoste,104.5,60.2,São Paulo,Próprio
+SKU 253,2013,outubro,25,Sapato,Nike,57.6,30.5,São Paulo,Próprio
+SKU 255,2013,abril,17,Camisa,Osklen,302.6,147.6,Rio de Janeiro,Próprio
+SKU 256,2013,dezembro,27,Sapato,Lacoste,55,32.7,Rio de Janeiro,Próprio
+SKU 258,2014,outubro,31,Camiseta,Osklen,194.4,133.5,Rio de Janeiro,Próprio
+SKU 259,2013,abril,15,Boné,Adidas,165.4,87.4,Online,Próprio
+SKU 263,2013,janeiro,14,Meia,Nike,59.5,34.9,Rio de Janeiro,Próprio
+SKU 272,2014,agosto,5,Camisa,Farme,261.4,151.9,Rio de Janeiro,Próprio
+SKU 273,2013,setembro,15,Meia,Adidas,74.4,43.2,Online,Revendedor
+SKU 281,2014,novembro,24,Boné,Hashtag,190.8,109.2,Belo Horizonte,Revendedor
+SKU 282,2014,agosto,29,Boné,Farme,141.4,74.7,Online,Próprio
+SKU 287,2013,dezembro,16,Meia,Reserva,67.9,19.3,Online,Próprio
+SKU 291,2013,novembro,13,Camisa,Adidas,185.1,78.2,Rio de Janeiro,Próprio
+SKU 295,2013,agosto,11,Meia,Farme,74.8,42.8,São Paulo,Próprio
+SKU 299,2013,março,30,Boné,Hashtag,85.4,50.8,Rio de Janeiro,Próprio
+SKU 316,2013,janeiro,14,Camiseta,Osklen,192.9,78.4,Online,Próprio
+SKU 316,2013,março,26,Casaco,Hashtag,284.9,137.9,São Paulo,Próprio
+SKU 329,2014,dezembro,17,Boné,Adidas,153.4,99,Rio de Janeiro,Revendedor
+SKU 333,2014,setembro,13,Meia,Reserva,62.3,26.9,Rio de Janeiro,Próprio
+SKU 335,2014,julho,26,Boné,Nike,95,67,São Paulo,Revendedor
+SKU 339,2014,março,1,Camisa,Lacoste,211.2,136.4,Rio de Janeiro,Próprio
+SKU 341,2014,setembro,13,Meia,Nike,77.6,45.1,Online,Revendedor
+SKU 351,2014,agosto,7,Camiseta,Nike,152,120.5,Belo Horizonte,Próprio
+SKU 353,2013,janeiro,1,Camisa,Hashtag,181.7,84,Online,Próprio
+SKU 361,2013,dezembro,27,Camisa,Reserva,268.6,103.2,Online,Próprio
+SKU 367,2014,agosto,20,Casaco,Osklen,192.7,135.7,Rio de Janeiro,Revendedor
+SKU 379,2013,maio,5,Boné,Hashtag,128.5,74.7,Rio de Janeiro,Próprio
+SKU 379,2014,julho,17,Sapato,Nike,114.7,44.1,Curitiba,Próprio
+SKU 381,2014,outubro,17,Boné,Nike,123.4,65.2,Rio de Janeiro,Próprio
+SKU 418,2013,junho,17,Casaco,Reserva,159.4,126.4,Online,Revendedor
+SKU 422,2014,junho,27,Camisa,Farme,320.5,98.8,Curitiba,Próprio
+SKU 437,2013,novembro,13,Boné,Adidas,118.4,116.2,São Paulo,Próprio
+SKU 459,2013,dezembro,26,Camisa,Reserva,204.6,108.1,São Paulo,Próprio
+SKU 475,2014,março,20,Casaco,Hashtag,353.6,186.8,Online,Revendedor
+SKU 477,2013,outubro,11,Boné,Reserva,102.4,92.8,Online,Próprio
+SKU 482,2013,junho,16,Meia,Reserva,60.6,48,Rio de Janeiro,Revendedor
+SKU 484,2014,novembro,24,Camiseta,Nike,176.3,62.1,Belo Horizonte,Próprio
+SKU 494,2013,janeiro,30,Sapato,Reserva,134.6,71.1,Rio de Janeiro,Próprio
+SKU 497,2013,outubro,22,Camiseta,Farme,162.1,52.7,São Paulo,Revendedor
+SKU 497,2014,abril,5,Casaco,Reserva,259.5,106.6,São Paulo,Próprio
+SKU 512,2014,outubro,30,Camisa,Osklen,290.2,129.7,São Paulo,Próprio
+SKU 513,2013,janeiro,14,Meia,Nike,52.8,25.1,São Paulo,Revendedor
+SKU 515,2014,outubro,12,Boné,Hashtag,190.1,100.4,Online,Próprio
+SKU 523,2013,dezembro,18,Boné,Nike,186.1,71.5,Rio de Janeiro,Próprio
+SKU 529,2013,maio,5,Camisa,Adidas,261,149.4,Online,Próprio
+SKU 534,2014,maio,2,Boné,Nike,226.6,64.5,São Paulo,Próprio
+SKU 536,2013,julho,16,Boné,Reserva,120.2,99.8,Curitiba,Próprio
+SKU 537,2014,março,16,Camisa,Hashtag,148.3,134.3,Rio de Janeiro,Próprio
+SKU 543,2014,março,6,Casaco,Reserva,176.4,104.9,São Paulo,Próprio
+SKU 545,2013,março,7,Camiseta,Farme,179.6,113.9,São Paulo,Próprio
+SKU 552,2013,fevereiro,2,Boné,Adidas,175.5,111.2,Rio de Janeiro,Próprio
+SKU 556,2014,junho,7,Casaco,Hashtag,275.6,131,Belo Horizonte,Próprio
+SKU 562,2014,janeiro,31,Camiseta,Reserva,164.7,87,São Paulo,Revendedor
+SKU 563,2013,janeiro,2,Camisa,Nike,200.9,153.3,Rio de Janeiro,Próprio
+SKU 564,2013,março,28,Casaco,Hashtag,253.5,92.7,Online,Próprio
+SKU 566,2014,março,8,Sapato,Nike,95.8,65.8,Online,Próprio
+SKU 567,2014,janeiro,12,Casaco,Lacoste,258.6,109.3,Curitiba,Próprio
+SKU 577,2014,março,15,Camiseta,Farme,123.6,121.3,São Paulo,Revendedor
+SKU 584,2013,agosto,11,Camiseta,Nike,196.8,56,Online,Revendedor
+SKU 586,2013,junho,22,Camisa,Osklen,209.1,165.7,Rio de Janeiro,Próprio
+SKU 592,2013,agosto,8,Casaco,Osklen,203.5,89.6,Online,Revendedor
+SKU 593,2013,junho,21,Casaco,Osklen,152.6,80.6,São Paulo,Próprio
+SKU 594,2013,setembro,15,Boné,Farme,171,90.4,Rio de Janeiro,Próprio
+SKU 596,2013,dezembro,22,Sapato,Osklen,82.8,60.2,São Paulo,Revendedor
+SKU 627,2013,março,5,Sapato,Hashtag,94.8,42.4,Online,Próprio
+SKU 639,2014,fevereiro,20,Casaco,Osklen,173.6,132.5,Rio de Janeiro,Próprio
+SKU 643,2013,fevereiro,2,Boné,Reserva,96.2,79.9,Belo Horizonte,Revendedor
+SKU 655,2014,maio,20,Meia,Hashtag,52.8,27.9,Online,Próprio
+SKU 664,2013,junho,25,Meia,Farme,65,21.8,Belo Horizonte,Revendedor
+SKU 666,2014,agosto,30,Camisa,Adidas,173.4,122.2,Online,Próprio
+SKU 671,2013,julho,16,Sapato,Lacoste,87.7,42.1,Online,Próprio
+SKU 679,2013,janeiro,10,Casaco,Reserva,229,108.9,Rio de Janeiro,Próprio
+SKU 681,2014,março,12,Boné,Adidas,228.2,74.2,Online,Revendedor
+SKU 683,2013,novembro,13,Camiseta,Hashtag,201.8,117.3,São Paulo,Próprio
+SKU 686,2013,dezembro,11,Casaco,Hashtag,372.1,136.1,Online,Próprio
+SKU 689,2014,setembro,13,Camisa,Hashtag,302.6,123,Online,Próprio
+SKU 692,2014,março,19,Camiseta,Adidas,184,116.6,Belo Horizonte,Próprio
+SKU 696,2013,março,20,Camiseta,Farme,242.2,106.6,Rio de Janeiro,Próprio
+SKU 698,2014,maio,9,Sapato,Lacoste,88.6,31.2,Rio de Janeiro,Próprio
+SKU 711,2014,fevereiro,28,Camisa,Nike,156.5,74.4,Rio de Janeiro,Revendedor
+SKU 721,2014,outubro,2,Casaco,Farme,249.5,83.9,Rio de Janeiro,Revendedor
+SKU 727,2013,setembro,15,Boné,Osklen,124.7,65.9,Online,Revendedor
+SKU 731,2013,julho,16,Boné,Farme,113.1,93.8,Belo Horizonte,Próprio
+SKU 736,2013,julho,16,Camiseta,Nike,210.1,92.5,Rio de Janeiro,Próprio
+SKU 737,2013,maio,5,Meia,Reserva,63.4,19.5,Online,Revendedor
+SKU 737,2013,outubro,25,Camisa,Hashtag,144.3,76.2,Rio de Janeiro,Próprio
+SKU 757,2013,dezembro,26,Casaco,Hashtag,267.1,141.1,Rio de Janeiro,Próprio
+SKU 759,2014,maio,5,Boné,Reserva,112.2,65.9,Guarulhos,Próprio
+SKU 761,2013,julho,16,Sapato,Reserva,105.2,61.2,Online,Revendedor
+SKU 763,2013,setembro,15,Casaco,Farme,179.8,106.8,Rio de Janeiro,Próprio
+SKU 766,2014,abril,23,Boné,Osklen,194.5,112.1,Rio de Janeiro,Próprio
+SKU 767,2013,setembro,15,Camisa,Farme,280.3,113.9,Rio de Janeiro,Próprio
+SKU 772,2013,abril,25,Camisa,Farme,211.2,99.2,Online,Próprio
+SKU 793,2014,outubro,11,Boné,Adidas,108.1,51.4,Online,Revendedor
+SKU 811,2014,janeiro,14,Camisa,Nike,187.8,57.9,Online,Próprio
+SKU 811,2014,agosto,31,Meia,Osklen,56.6,42.7,Online,Próprio
+SKU 819,2014,janeiro,25,Sapato,Osklen,106,44.8,Online,Revendedor
+SKU 824,2014,janeiro,13,Boné,Nike,132.8,46.8,Rio de Janeiro,Próprio
+SKU 826,2014,novembro,5,Camiseta,Hashtag,176.3,124.2,Guarulhos,Próprio
+SKU 829,2014,setembro,13,Sapato,Farme,64.5,55.4,São Paulo,Próprio
+SKU 836,2013,março,3,Sapato,Adidas,67.7,56.2,Online,Próprio
+SKU 836,2014,setembro,27,Camiseta,Reserva,214.1,95.7,Online,Próprio
+SKU 854,2013,maio,5,Camisa,Reserva,137.6,114.2,Online,Revendedor
+SKU 857,2014,outubro,8,Camiseta,Hashtag,112.8,82,Online,Revendedor
+SKU 879,2013,março,14,Casaco,Lacoste,223.2,144.1,São Paulo,Próprio
+SKU 885,2013,março,1,Casaco,Reserva,262.1,126.9,São Paulo,Próprio
+SKU 886,2014,novembro,5,Camisa,Lacoste,268.6,141.9,Online,Próprio
+SKU 889,2013,novembro,13,Camisa,Adidas,206,99.8,Rio de Janeiro,Próprio
+SKU 891,2013,janeiro,28,Sapato,Lacoste,129.2,45.5,Belo Horizonte,Próprio
+SKU 912,2014,abril,23,Boné,Hashtag,101.5,84.3,Rio de Janeiro,Revendedor
+SKU 918,2013,abril,26,Boné,Adidas,163.3,50.3,Rio de Janeiro,Próprio
+SKU 935,2014,junho,16,Casaco,Reserva,209.9,90.7,Online,Próprio
+SKU 936,2014,janeiro,31,Meia,Farme,93.5,34.2,São Paulo,Próprio
+SKU 943,2013,outubro,25,Boné,Nike,128.5,61.1,Online,Próprio
+SKU 945,2013,agosto,11,Camisa,Lacoste,230.9,144.2,Curitiba,Próprio
+SKU 947,2013,junho,9,Camiseta,Farme,115.1,60.8,São Paulo,Próprio
+SKU 951,2013,abril,3,Camisa,Nike,233.5,92.5,Online,Próprio
+SKU 954,2013,maio,5,Camiseta,Reserva,194.2,85.5,São Paulo,Próprio
+SKU 967,2014,dezembro,9,Boné,Reserva,89.5,53.2,Online,Próprio
+SKU 968,2013,março,27,Casaco,Farme,242.6,78.9,Rio de Janeiro,Revendedor
+SKU 972,2013,junho,18,Camiseta,Lacoste,160.3,103.5,São Paulo,Próprio
+SKU 973,2014,julho,23,Boné,Nike,120.3,75.1,Rio de Janeiro,Próprio
+SKU 977,2013,março,19,Sapato,Reserva,110.2,46.6,Online,Revendedor
+SKU 977,2014,outubro,10,Sapato,Lacoste,81.4,30.1,Online,Próprio
+SKU 981,2013,setembro,14,Boné,Adidas,117,49.4,Rio de Janeiro,Próprio
+SKU 996,2014,janeiro,31,Camiseta,Adidas,124.7,94.1,Belo Horizonte,Próprio
+SKU 996,2014,junho,11,Casaco,Nike,267.3,130.3,Belo Horizonte,Próprio
